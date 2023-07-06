@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+.main{
+    margin: auto;
+    text-align: center;
+}
+#heading{
+    font-family: 'MV Boli';
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+.line{
+    width: 10rem;
+    height: 0.4rem;
+    background-color: goldenrod;
+    border-radius: 0.2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.btns{
+    background: transparent;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+}
+button{
+    font-size: 1.5rem;
+    padding: 0.5%;
+    border: 2px solid goldenrod;
+    border-radius: 0.5rem;
+    color: goldenrod;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px black;
+}
+button:hover{
+    background-color: goldenrod;
+    color: white;
+    transition: 0.4s;
+    font-size: 1.57rem;
+}
+.items{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 3rem;
+    padding-right: 10%;
+    padding-left: 10%;
+    gap: 3%;
+}
+.items div{
+    padding: 0.6rem;
+    display: flex;
+}
+.pic{
+    border: 4px solid goldenrod;
+    border-radius: 2px;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 1rem;
+}
+.name{
+    font-family: 'Georgia';
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.price{
+    color: goldenrod;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+.about{
+    font-size: 1.3rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ek{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 0.05%;
+}
+@media screen and (max-width: 1080px) {
+    .items{
+        /* display: block; */
+        grid-template-columns: auto ;
+        gap: 5%;
+    }
+}
+
+
+/* Large desktop */
+/* @media (min-width: 1200px) { ... } */
+ 
+/* Portrait tablet to landscape and desktop */
+/* @media (min-width: 768px) and (max-width: 979px) { ... } */
+ 
+/* Landscape phone to portrait tablet */
+/* @media (max-width: 767px) { ... } */
+ 
+/* Landscape phones and down */
+/* @media (max-width: 480px) { ... } */
+
